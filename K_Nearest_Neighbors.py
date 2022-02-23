@@ -41,12 +41,11 @@ if __name__ == "__main__":
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=1234
-    )
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    k = 3
-    clf = KNN(k)
-    clf.fit(X_train, y_train)
-    predictions = clf.predict(X_test)
-    print("KNN classification accuracy", accuracy_score(y_test, predictions))
+    K = [3, 5, 7, 9]
+    for k in K:
+        clf = KNN(k)
+        clf.fit(X_train, y_train)
+        predictions = clf.predict(X_test)
+        print("KNN classification accuracy with k = ", k, " is: ", accuracy_score(y_test, predictions))
