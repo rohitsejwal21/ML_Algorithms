@@ -31,13 +31,14 @@ class KNN:
 
         return most_common[0][0]
 
-
 if __name__ == "__main__":
-
+    
+    #Importing libraries
     from sklearn import datasets
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
 
+    #Load Dataset
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
 
