@@ -35,7 +35,6 @@ if __name__ == "__main__":
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
 
-    #Load Dataset
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
 
