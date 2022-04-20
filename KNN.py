@@ -31,7 +31,6 @@ class KNN:
 
 if __name__ == "__main__":
     
-    #Importing libraries
     from sklearn import datasets
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
