@@ -15,7 +15,6 @@ class KNN:
 
     def predict(self, X):
         predicted_labels = [self._predict(x) for x in X]
-
         return np.array(predicted_labels)
     
     def _predict(self, x):
@@ -28,7 +27,6 @@ class KNN:
 
         #3. Majority Vote
         most_common = Counter(k_nearest_labels).most_common(1)
-
         return most_common[0][0]
 
 if __name__ == "__main__":
