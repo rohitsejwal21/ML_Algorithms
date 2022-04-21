@@ -39,6 +39,7 @@ class LogisticRegression():
 
 
 if __name__ == "__main__":
+    
     # Imports
     from sklearn.model_selection import train_test_split
     from sklearn import datasets
