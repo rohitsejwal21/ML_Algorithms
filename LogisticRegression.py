@@ -10,7 +10,7 @@ class LogisticRegression():
         self.weights = None
         self.bias = None
     
-    #1. Training Step
+    #Training Step
     def fit(self, X, y):
 
         n_samples, n_features = X.shape
@@ -29,6 +29,8 @@ class LogisticRegression():
             self.bias -= self.lr*db
 
     def predict(self, X):
+        
+        #Prediction method
         linear_model = np.dot(X, self.weights) + self.bias
         y_pred = self._sigmoid(linear_model)
 
