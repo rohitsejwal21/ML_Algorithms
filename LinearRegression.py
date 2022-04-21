@@ -1,7 +1,8 @@
 import numpy as np
 
 class LinearRegression:
-
+    
+    #Linear regression class
     def __init__(self, lr=0.001, n_iters=1000):
         self.lr = lr
         self.n_iters = n_iters
@@ -36,7 +37,6 @@ class LinearRegression:
 
 if __name__ == "__main__":
 
-    #Importing libraries
     from sklearn import datasets
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import mean_squared_error
