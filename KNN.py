@@ -1,9 +1,8 @@
 import numpy as np
 from collections import Counter
-    from sklearn import datasets
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import accuracy_score
-
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 def euclidean_distance(x1, x2):
     
