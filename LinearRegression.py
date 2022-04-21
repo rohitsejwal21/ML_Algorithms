@@ -1,4 +1,8 @@
 import numpy as np
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+
 
 class LinearRegression:
     
@@ -36,10 +40,6 @@ class LinearRegression:
         return y_predicted
 
 if __name__ == "__main__":
-
-    from sklearn import datasets
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import mean_squared_error
 
     X, y = datasets.make_regression(n_samples = 1000, n_features = 1, noise = 20, random_state = 42)
 
