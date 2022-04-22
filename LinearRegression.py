@@ -19,7 +19,6 @@ class LinearRegression:
         self.bias = 0
 
         #2. Gradient Descent
-
         for _ in range(self.n_iters):
 
             y_predicted = np.dot(X, self.weights) + self.bias
