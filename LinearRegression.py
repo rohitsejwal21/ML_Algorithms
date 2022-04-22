@@ -32,14 +32,13 @@ class LinearRegression:
             self.bias = self.weights - self.lr * db
 
     def predict(self, X):
-
         y_predicted = np.dot(X, self.weights) + self.bias
+        
         return y_predicted
 
 if __name__ == "__main__":
 
     X, y = datasets.make_regression(n_samples = 1000, n_features = 1, noise = 20, random_state = 42)
-
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     LR = [0.001, 0.01, 0.1, 1]
