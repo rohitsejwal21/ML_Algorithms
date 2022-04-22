@@ -16,7 +16,6 @@ class LogisticRegression():
         self.weights = np.zeros(n_features)
         self.bias = 0
 
-        #Gradient Descent
         for _ in range(self.n_iters):
             linear_model = np.dot(X, self.weights) + self.bias
             y_pred = self._sigmoid(linear_model)
