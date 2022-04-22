@@ -15,7 +15,6 @@ class LogisticRegression():
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
-
         for _ in range(self.n_iters):
             linear_model = np.dot(X, self.weights) + self.bias
             y_pred = self._sigmoid(linear_model)
@@ -31,14 +30,12 @@ class LogisticRegression():
         #Prediction method
         linear_model = np.dot(X, self.weights) + self.bias
         y_pred = self._sigmoid(linear_model)
-
         y_predicted = [1 if i > 0.5 else 0 for i in y_pred]
 
         return np.array(y_predicted)
 
     def _sigmoid(self, x):
         return 1/(1 + np.exp(-x))
-
 
 if __name__ == "__main__":
 
