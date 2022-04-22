@@ -46,9 +46,7 @@ if __name__ == "__main__":
     cancer = datasets.load_breast_cancer()
     X, y = cancer.data, cancer.target
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=1234
-    )
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
 
     LR = [0.00001, 0.0001, 0.001]
     for lr in LR:    
