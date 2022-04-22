@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 
 def euclidean_distance(x1, x2):
     
-    #returning the euclidean distance between two points
+    #Euclidean distance between two points
     return np.sqrt(np.sum((x1-x2)**2))
 
 class KNN:
