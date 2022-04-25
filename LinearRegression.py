@@ -13,14 +13,10 @@ class LinearRegression:
 
     def fit(self, X, y):
         n_samples, n_features = X.shape
-
-        # Init weights and bias parameters
         self.weights = np.zeros(n_features)
         self.bias = 0
 
-        # Gradient Descent
         for _ in range(self.n_iters):
-
             y_predicted = np.dot(X, self.weights) + self.bias
 
             # Calculate gradient
