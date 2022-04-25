@@ -10,7 +10,6 @@ def euclidean_distance(x1, x2):
 
 class KNN:
 
-    #KNN implementation
     def __init__(self, k=3):
         self.k = k
 
@@ -23,6 +22,7 @@ class KNN:
         return np.array(predicted_labels)
     
     def _predict(self, x):
+        
         #1. Euclidean distance between x and all training points
         distances = [euclidean_distance(x, x_train) for x_train in self.X_train]
 
