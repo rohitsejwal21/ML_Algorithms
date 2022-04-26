@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 def euclidean_distance(x1, x2):
-    
+    # Euclidean Distance
     return np.sqrt(np.sum((x1-x2)**2))
 
 class KNN:
